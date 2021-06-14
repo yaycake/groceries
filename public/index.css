@@ -1,0 +1,26 @@
+.app-wrapper {
+  font-family: sans-serif;
+  color: pink;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%; }
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.list-item-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.checkbox {
+  border: 2px solid black;
+  width: 30px;
+  height: 30px; }
+
+.trash {
+  width: 30px;
+  height: 30px;
+  background-color: black; }

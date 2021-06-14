@@ -1,0 +1,26 @@
+{
+  "name": "grocery_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build-style && concurrently 'npm:start-dev' 'npm:watch-style'",
+    "start-dev": "NODE_ENV=development nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-style": "node-sass style -o public --watch",
+    "build-style": "node-sass style -o public"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "gulp-clean-css": "^4.3.0",
+    "node-sass": "^6.0.0"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.2",
+    "nodemon": "^2.0.7"
+  }
+}
